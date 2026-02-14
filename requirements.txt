@@ -1,0 +1,63 @@
+# NVM Data Pipeline - Requirements
+# Python 3.9+ recommended
+
+# ============================================================================
+# CORE DATA & NUMERICAL LIBRARIES (Week 2-5)
+# ============================================================================
+numpy>=1.24.0              # High-performance numerical arrays, signal generation
+pandas>=2.0.0              # Data manipulation, time-series handling
+scipy>=1.10.0              # Signal processing (FFT, filters, spectral analysis)
+
+# ============================================================================
+# FILE I/O & COMPRESSION (Week 2-4)
+# ============================================================================
+pyarrow>=12.0.0            # Parquet file format (columnar, compressed)
+fastparquet>=2023.4.0      # Alternative Parquet engine (fallback)
+
+# ============================================================================
+# DATABASE CONNECTIVITY (Week 3-4)
+# ============================================================================
+mysql-connector-python>=8.0.33    # MySQL database driver
+pymysql>=1.0.3                    # Pure Python MySQL client (alternative)
+sqlalchemy>=2.0.0                 # SQL toolkit & ORM (optional, for advanced usage)
+
+# ============================================================================
+# PIPELINE & MONITORING (Week 4-6)
+# ============================================================================
+watchdog>=3.0.0            # File system event monitoring (ingestion watcher)
+schedule>=1.2.0            # Job scheduling for batch processes
+pyyaml>=6.0                # YAML configuration files
+python-dotenv>=1.0.0       # Environment variable management (.env files)
+
+# ============================================================================
+# LOGGING & ALERTING (Week 6)
+# ============================================================================
+loguru>=0.7.0              # Enhanced logging (better than standard logging)
+colorama>=0.4.6            # Colored terminal output (Windows compatible)
+
+# ============================================================================
+# DATA VALIDATION & QUALITY (Week 4)
+# ============================================================================
+pydantic>=2.0.0            # Data validation using Python type hints
+jsonschema>=4.17.0         # JSON schema validation
+
+# ============================================================================
+# TESTING & DEVELOPMENT (Week 8)
+# ============================================================================
+pytest>=7.3.0              # Testing framework
+pytest-cov>=4.1.0          # Code coverage reports
+black>=23.3.0              # Code formatter (optional)
+flake8>=6.0.0              # Linter (optional)
+
+# ============================================================================
+# VISUALIZATION & NOTEBOOK (Optional - for development/debugging)
+# ============================================================================
+matplotlib>=3.7.0          # Plotting (for debugging signal generation)
+seaborn>=0.12.0            # Statistical plotting
+jupyter>=1.0.0             # Jupyter notebooks (optional)
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+tqdm>=4.65.0               # Progress bars for long-running tasks
+python-dateutil>=2.8.2     # Enhanced datetime handling
